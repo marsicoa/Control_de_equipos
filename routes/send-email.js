@@ -4,20 +4,20 @@ var router = express.Router();
 
 /* Post email */
 router.get('/send-email', function (req, res, next){
-    res.send('hola')
+    res.send('test')
     /*
     let transporter = nodemailer.createTransport({
        host: 'smtp.ethereal.email'
       ,port: 587
       ,secure:false
       ,auth: {
-         user: 'ned.mclaughlin66@ethereal.email'
-        ,pass: 'H1MjFbrxXQT78fr91F'
+         user: 'EMAIL_USER@ethereal.email'
+        ,pass: 'EMAIL_PASSWORD'
       }
     })
     let mailOptions = {
        from: 'Remitente'
-      ,to:'sistemas@drogueriasumed.com'
+      ,to:'destinatario@example.com'
       ,subject: 'Entrega de equipos'
       ,text: 'Probando recepcion'
     }
