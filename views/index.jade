@@ -1,0 +1,125 @@
+doctype html
+html
+  head
+  title Equipos Portatiles
+  body#bdy
+    h5
+      span
+        a(href='/')
+          img(src='https://www.drogueriasumed.com/assets/images/sumed-logo.png')
+    hr
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel="icon" type="image/x-icon" href="../public/images/favicon.ico")
+    link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z' crossorigin='anonymous')
+    link(rel='stylesheet' href='../stylesheets/style.css')
+    // Compiled and minified CSS
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css')
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
+    link(href='../stylesheets/sweetalert2.min.css' rel='stylesheet')
+    // Inicio Navbar
+    nav.navbar.navbar-expand-lg.navbar-light
+      #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li#icono-in.nav-item
+            a#in.nav-link
+              i.tiny.material-icons add
+          li#icono-out.nav-item
+            a#out.nav-link
+              i.tiny.material-icons send
+          li#icono-print.nav-item
+            a#print.nav-link
+              i.tiny.material-icons print
+          li#icono-reload.nav-item
+            a#reload.nav-link
+              i.tiny.material-icons refresh
+          li#searchform.field
+            input#searchterm(type='text' placeholder='Reservado por...')
+            button#search.btn(type='button') buscar
+    // Fin Navbar
+    //Dark-mode
+    div
+    i#btn-dw.material-icons brightness_medium
+    //
+    // Inicio Inventario
+    section#inventario.inventory(style='display: none;')
+      .container.py-2
+        p.lead Nuevo dispositivo
+        form#formulario
+          label
+          input#codigoDispositivo-check-in.form-control.my-2(type='text' placeholder='Código/No. Serie')
+          label
+          input#descripcionDispositivo-check-in.form-control.my-2(type='text' placeholder='Descripción')
+          button#boton-nuevo-dispositivo.btn.btn-success(tpye='reset') Ingresar
+      .container
+        p.lead Inventario de equipos
+        table.table
+          thead.thead-dark
+            tr
+              th
+                | Equipo
+              th
+                | Codigo/No. Serie
+              th 
+                | Descripcion
+              th
+                | Eliminar
+          tbody#tablaInventario
+    // Fin Inventario
+    // Inicio Entregas
+    section#entregas.check-out(style='display: none;')
+      .container.py-2
+        p.lead Registrar entrega
+        form
+          label
+          input#codigoDispositivo-check-out.form-control.my-2(type='text' placeholder='Código/No. Serie')
+          label
+          input#responsableDispositivo-check-out.form-control.my-2(type='text' placeholder='Responsable')
+          button#boton-entregar-dispositivo.btn.btn-success(tpye='reset') Confirmar
+      .container
+        p.lead Historial de entregas
+        #container
+          table.table
+            thead.thead-dark
+              tr
+                th
+                  | Equipo
+                //th
+                //  | No. Reg
+                //th
+                //  | Codigo/No. Serie
+                th
+                  | Descripcion
+                th
+                  | Responsable
+                th
+                  | Fecha y Hora
+            tbody#tablaHistorial
+    // Fin Entregas
+    // Inicio Busqueda
+    section#busqueda.check-out(style='display: none;')
+        p.lead Resultado de la busqueda:
+        #container
+          table.table
+            thead.thead-dark
+              tr
+                th
+                  | Equipo
+                //th
+                //  | No. Reg
+                //th
+                //  | Codigo/No. Serie
+                th
+                  | Descripcion
+                th
+                  | Responsable
+                th
+                  | Fecha y Hora
+            tbody#tablaBusqueda
+    // Fin Busqueda
+    // Scripts
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js')
+    script(src='../javascripts/sweetalert2.min.js')
+    script(src='../javascripts/jquery.js')
+    script(src='https://smtpjs.com/v3/smtp.js')
+    // <script src="./pouchdb-7.2.1.js"></script>
+    script(type='application/javascript' src='../javascripts/main.js')

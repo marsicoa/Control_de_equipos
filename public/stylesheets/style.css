@@ -1,0 +1,246 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    /*background-image: url('../images/bg.jpg');*/
+    background-color:rgb(31, 31, 31);
+    font-size: 18px;
+}
+p.lead{
+    margin-top: 100px;
+    color: rgb(247, 253, 158);
+    font-size: 24px;
+}
+td{
+    color: aliceblue;
+    font-size: 20px;
+    /*text-shadow: 3px 2px 5px rgb(38,166,154);*/
+}
+.tiny.material-icons{
+    /*color:aqua;*/
+    /*font-size:3rem;*/
+    text-align: top;
+}
+.glow{
+    margin-top: 5px;
+    width: 40px;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: .3px .3px .3px 1px rgb(38,166,154);
+    border-radius: 2px;
+}
+.img{
+    border-radius: 30px;
+    width: 250px; 
+    height:250px;
+}
+.td-img{
+    border-radius: 30px;
+    width: 50px; 
+    height:50px;
+}
+.navbar.navbar-expand-lg.navbar-light{
+    background-color:#454d55;
+    width: 100%;
+}
+.div.container{
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: auto;
+}
+.btn.btn-success{
+    background-color: rgb(36, 36, 36);
+    color: aqua;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 60px;
+}
+.dark-white{
+    background-color:rgb(187, 187, 187);
+}
+#btn-dw{
+    position:absolute;
+    right:0%;
+    top: 0%;
+    color:#454d55;
+}
+#codigoDispositivo-check-in{
+    font-size: 24px;
+    color:aliceblue;
+    /*text-shadow: 2px 2px 5px rgb(38,166,154);*/
+}
+#descripcionDispositivo-check-in{
+    font-size: 24px;
+    color:aliceblue;
+    /*text-shadow: 2px 2px 5px rgb(38,166,154);*/
+}
+#codigoDispositivo-check-out{
+    font-size: 24px;
+    color:aliceblue;
+    /*text-shadow: 2px 2px 5px rgb(38,166,154);*/
+}
+#responsableDispositivo-check-out{
+    font-size: 24px;
+    color:aliceblue;
+    /*text-shadow: 2px 2px 5px rgb(38,166,154);*/
+}
+#tablaInventario{
+    table-layout: fixed;
+}
+#tablaHistorial{
+    table-layout: fixed;
+}
+#tablaComprobante{
+    table-layout: fixed;
+}
+#searchterm{
+    color: aliceblue;
+    width: 60%;
+}
+#sarchform{
+    flex: content;
+    justify-content: end;
+    margin-right: 0%;
+    height: auto;
+}
+
+ /*moblile -->*/
+ @media screen and (max-width:991px){
+    @media screen and (max-width: 735px) {
+        body{
+            background-image: url('../images/bg-galaxy.jfif');
+            /*background-color: black;*/
+            align-content: center;
+        }
+    }
+
+    .navbar.navbar-expand-lg.navbar-light{
+        background-color:rgb(36, 36, 36);
+        width: 100%;
+        align-content:center;
+    }
+    .collapse.navbar-collapse{
+        display: block;
+    }
+    .navbar-nav.mr-auto{
+        display: block;
+    }
+    img.banner{
+        width:100%;
+        height: auto;
+        padding: 5%;
+        
+    }
+    .btn.btn-success{
+        background-color: rgb(36, 36, 36);
+        color: aqua;
+        margin-top: 20px;
+        font-size: 1.5rem;
+        width: 100%;
+        height: 60px;
+    }
+    .tiny.material-icons{
+        color:aqua;
+        font-size:3rem;
+        text-align: top;
+    }
+    a{
+        align-items:baseline;
+        text-align: right;
+        width: 100%;
+        height: auto;
+    }
+    #titulito{
+        display: none;
+    }
+    /*#formulario{
+        margin-top: 50px;
+    }*/
+    #tablaInventario{
+        table-layout: fixed;
+        width: 100%;
+        height: auto;
+    }
+    #tablaHistorial{
+        table-layout: fixed;
+        width: 100%;
+        height: auto;
+    }
+    #tablaComprobante{
+        table-layout: fixed;
+        width: 100%;
+        height: auto;
+    }
+    .div.container{
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: auto;
+    }
+    th{
+        font-size: 18px;
+    }
+    td{
+        color: aliceblue;
+        font-size: 20px;
+        /*text-shadow: 3px 2px 5px rgb(38,166,154);*/
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+    }
+    
+}
+@media screen and (max-width:351px){
+    .navbar.navbar-expand-lg.navbar-light{
+        background-color:rgb(36, 36, 36);
+        width: 100%;
+        align-content:center;
+    }
+    .collapse.navbar-collapse{
+        display: block;
+    }
+    .navbar-nav.mr-auto{
+        display: block;
+    }
+    .tiny.material-icons{
+        color:aqua;
+        font-size: 2rem;
+        text-align: center;
+        justify-content: baseline;
+    }
+    #titulito{
+        display: none;
+    }
+    #tablaInventario{
+        table-layout: fixed;
+        width: 100%;
+        height: auto;
+    }
+    #tablaHistorial{
+        table-layout: fixed;
+        width: 100%;
+        height: auto;
+    }
+    #tablaComprobante{
+        table-layout: fixed;
+        width: 100%;
+        height: auto;
+    }
+    .div.container{
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: auto;
+    }
+    td{
+        color: aliceblue;
+        font-size: 20px;
+        text-shadow: 3px 2px 5px rgb(38,166,154);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+    }
+}
